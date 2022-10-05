@@ -19,7 +19,7 @@ If you want to put your report under version control using GitHub:
 6. Provide the contents of `ecsproject.cls`.
 
 If you just want to use Overleaf without version control:
-1. [Download the files in this repo](https://github.com/t-bre/comp3200-report-template/archive/refs/heads/main.zip)
+1. [Download the files in this repo](https://github.com/t-bre/comp3200-report-template/archive/refs/heads/main.zip).
 2. Log in to [Overleaf](https://www.overleaf.com/).
 3. Return to your projects on Overleaf and click "New Project".
 4. Import the project from the downloaded files ("Upload Project").
