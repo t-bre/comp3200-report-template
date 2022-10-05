@@ -29,5 +29,5 @@ If you just want to use Overleaf without version control:
 This file is required and should contain the `ecsproject` class created by Steve Gunn, which is copyrighted and has therefore not been included in this repository. 
 The file is available for ECS students [on the intranet](https://secure.ecs.soton.ac.uk/notes/TeX/) - download `ecsdocs.zip`, find the file `ecsproject.cls` and replace the contents of the placeholder file with its actual contents. The contents of this file *must* be provided for the template to work!
 
-> If you notice a problem with the instructions here, or have an improvement for the template, feel free to submit a PR.
+> I submitted my final report in 2020/21, and this setup worked for me at the time.
 > I have no intention to update this repo in future, but I thought it might be useful to someone.
