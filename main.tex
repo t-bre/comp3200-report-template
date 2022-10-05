@@ -1,0 +1,65 @@
+\documentclass{ecsproject} 
+
+%TC:ignore
+\input{Misc/Preamble}
+%TC:endignore
+
+\begin{document}
+
+    %---------------------------------------------------- extra setup
+    %TC:ignore
+    \bstctlcite{IEEEexample:BSTcontrol}
+    %TC:endignore
+
+    %---------------------------------------------------- pre-body
+    %TC:ignore
+    \include{Misc/Front-Page}
+    \include{Misc/Abstract}
+    \include{Misc/Statement-of-Originality}
+    %TC:endignore
+    
+    %---------------------------------------------------- table of contents
+    %TC:ignore
+    \include{Misc/Table-of-Contents}
+    %TC:endignore
+    
+    %---------------------------------------------------- lists of figures, tables, symbols and listings
+    %TC:ignore
+    \include{Misc/Lists}
+    %TC:endignore
+    
+    %---------------------------------------------------- report body
+    \hypersetup {
+        urlcolor={black},
+    }
+    
+    \mainmatter
+        % note includes can't have spaces in file name
+        % use \input to allow spaces (slower)
+       \include{Chapters/01-Chapter-1}
+       \include{Chapters/02-Chapter-2}
+       \include{Chapters/03-Chapter-3}
+    
+    %---------------------------------------------------- bibliography
+    %TC:ignore
+    \backmatter
+        \include{Misc/References}
+    %TC:endignore
+    
+    %---------------------------------------------------- appendix
+    %TC:ignore
+    % \mainmatter resets the page count but is necessary to put the
+    % appendix after the references, which requires this workaround
+    % with counters to fix the page numbers. There is probably a
+    % better way, but this works. You can also put the references
+    % after the appendix and get rid of the stuff with the counters.
+    \newcounter{appendixpage}
+    \setcounter{appendixpage}{\thepage}
+    \addtocounter{appendixpage}{1}
+    \mainmatter
+        \setcounter{page}{\theappendixpage}
+        \include{Chapters/Appendix}
+    %TC:endignore
+    
+\end{document}
+%
