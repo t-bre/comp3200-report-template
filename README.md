@@ -11,7 +11,7 @@
 ## Getting Started
 
 If you want to put your report under version control using GitHub:
-1. Fork this repo, or create a new repo using this one as a template.
+1. Create a new repo using this one as a template.
 2. Log in to [Overleaf](https://www.overleaf.com/).
 3. Link your GitHub to Overleaf under "Integrations" in your account settings.
 4. Return to your projects on Overleaf and click "New Project."
