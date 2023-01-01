@@ -25,7 +25,7 @@ If you just want to use Overleaf without version control:
 4. Import the project from the downloaded files ("Upload Project").
 5. Provide the contents of `ecsproject.cls`.
 
-## :warning: `ecsproject.cls`
+## :warning: `ecsproject.cls` and `lstpatch.sty`
 This file is required and should contain the `ecsproject` class created by Steve Gunn, which is copyrighted and has therefore not been included in this repository. 
 The file is available for ECS students [on the intranet](https://secure.ecs.soton.ac.uk/notes/TeX/) - download `ecsdocs.zip`, find the file `ecsproject.cls` and replace the contents of the placeholder file with its actual contents. The contents of this file *must* be provided for the template to work! You will also need to either add `lstpatch.sty` to the root folder or remove the line in `ecsproject.cls` with `\usepackage{lstpatch}` (removing this may or may not cause problems depending on your use of the `listings` package).
 
